@@ -15,10 +15,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static String greenFlag = "greenflag";
     private final Context context;
 
-    //this table is to store the patients information when register
+    //this table is to store the user information when register
     String greenF = "CREATE TABLE if not exists greenflag ('id' INTEGER PRIMARY KEY AUTOINCREMENT ,'email' TEXT, 'password' TEXT)";
 
-    //this creates the patients and NHS tables
+
     public DatabaseHelper(Context context) {
         super(context, name, null , version);
         this.context=context;
